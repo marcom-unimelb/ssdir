@@ -1,0 +1,4 @@
+ssdir
+=====
+
+Proto directory
