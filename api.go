@@ -79,7 +79,7 @@ func main() {
 			temp, _ = json.Marshal(tempOut)
 			//temp, _ := json.Marshal(out[0].(staffdir.PersonSummary))
 		}
-		return 1, nil  // string(temp)
+		return 200, string(temp)
 		// var data []string
 		// if strings.Contains(block, "%7C") {
 		// 	data = strings.Split(strings.SplitAfter(r.RequestURI, "/?")[1], "|")
@@ -113,7 +113,7 @@ func main() {
 			temp, _ = json.Marshal(tempOut)
 			//temp, _ := json.Marshal(out[0].(staffdir.PersonSummary))
 		}
-		return string(temp)
+		return 200, string(temp)
 	})
 
 	m.Get("/staffdir/manager", func(res http.ResponseWriter, r *http.Request) (int, string) {
