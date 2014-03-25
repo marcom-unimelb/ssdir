@@ -1,4 +1,4 @@
 ssdir
 =====
 
-Proto directory
+Proto directory.
